@@ -27,27 +27,28 @@
 }
 
 body {
-  @apply bg-gray-50 text-gray-900 font-sans leading-relaxed;
+  /* Light blue background with dark text for healthcare feel */
+  @apply bg-blue-50 text-black font-sans leading-relaxed;
 }
 
 h1 {
-  @apply text-3xl md:text-4xl font-bold text-gray-900 font-serif mb-6 leading-tight;
+  @apply text-3xl md:text-4xl font-bold text-blue-900 font-serif mb-6 leading-tight;
 }
 
 h2 {
-  @apply text-2xl font-semibold text-gray-900 font-serif mb-4 leading-tight;
+  @apply text-2xl font-semibold text-blue-900 font-serif mb-4 leading-tight;
 }
 
 h3 {
-  @apply text-xl font-semibold text-gray-900 font-serif mb-5 leading-snug;
+  @apply text-xl font-semibold text-blue-900 font-serif mb-5 leading-snug;
 }
 
 h4 {
-  @apply text-lg font-medium text-gray-900 font-serif mb-3;
+  @apply text-lg font-medium text-blue-900 font-serif mb-3;
 }
 
 p {
-  @apply text-gray-900 leading-relaxed mb-4;
+  @apply text-black leading-relaxed mb-4;
 }
 
 /* Line clamp utilities */
@@ -74,15 +75,15 @@ p {
 
 /* Layout components */
 .layout {
-  @apply flex min-h-screen bg-gray-50;
+  @apply flex min-h-screen bg-blue-50;
 }
 
 .sidebar {
-  @apply fixed top-0 left-0 h-full w-[280px] bg-white border-r border-gray-200 pt-10 pb-6 overflow-y-auto z-10;
+  @apply fixed top-0 left-0 h-full w-[280px] bg-black text-white border-r border-blue-900 pt-10 pb-6 overflow-y-auto z-10;
 }
 
 .sidebar-title {
-  @apply font-serif text-lg font-semibold px-6 mb-8;
+  @apply font-serif text-lg font-semibold px-6 mb-8 text-yellow-300;
 }
 
 .sidebar-nav {
@@ -90,11 +91,11 @@ p {
 }
 
 .sidebar-link {
-  @apply block px-3 py-2 text-gray-900 hover:bg-blue-50 rounded-lg transition-colors font-sans text-sm;
+  @apply block px-3 py-2 text-white hover:bg-blue-700 rounded-lg transition-colors font-sans text-sm;
 }
 
 .sidebar-link-active {
-  @apply block px-3 py-2 bg-blue-50 text-blue-800 font-medium rounded-lg font-sans text-sm;
+  @apply block px-3 py-2 bg-blue-600 text-yellow-300 font-medium rounded-lg font-sans text-sm;
 }
 
 .sidebar-section {
@@ -102,7 +103,7 @@ p {
 }
 
 .sidebar-heading {
-  @apply px-6 mb-2 text-xs font-medium text-gray-900 uppercase tracking-wider;
+  @apply px-6 mb-2 text-xs font-medium text-yellow-300 uppercase tracking-wider;
 }
 
 .main-content {
@@ -115,11 +116,11 @@ p {
 
 /* Card components */
 .card {
-  @apply bg-white rounded-lg border border-gray-200 p-6 transition-all hover:border-gray-300;
+  @apply bg-white rounded-lg border border-blue-200 p-6 transition-all hover:border-blue-300;
 }
 
 .book-card {
-  @apply bg-white rounded-lg overflow-hidden border border-gray-200 transition-all hover:border-gray-500;
+  @apply bg-white rounded-lg overflow-hidden border border-blue-200 transition-all hover:border-blue-400;
 }
 
 .book-card-image {
@@ -142,13 +143,13 @@ p {
 }
 
 .btn-primary {
-  @apply px-4 py-2 rounded-lg bg-black text-white border-0 
-  transition-colors hover:bg-gray-800 focus:outline-none focus:ring-1 
-  focus:ring-black font-sans;
+  @apply px-4 py-2 rounded-lg bg-yellow-400 text-black border-0
+  transition-colors hover:bg-yellow-500 focus:outline-none focus:ring-1
+  focus:ring-yellow-500 font-sans;
 }
 
 .btn-subtle {
-  @apply px-4 py-2 rounded-lg bg-transparent text-gray-600 hover:text-blue-800
+  @apply px-4 py-2 rounded-lg bg-transparent text-blue-900 hover:text-yellow-600
   transition-colors font-sans;
 }
 
@@ -158,15 +159,15 @@ p {
 }
 
 .metric-card {
-  @apply bg-white p-5 rounded-lg border border-gray-200;
+  @apply bg-white p-5 rounded-lg border border-blue-200;
 }
 
 .metric-value {
-  @apply text-3xl font-serif text-gray-900 mb-1;
+  @apply text-3xl font-serif text-blue-900 mb-1;
 }
 
 .metric-label {
-  @apply text-sm text-gray-500 font-sans;
+  @apply text-sm text-blue-900 font-sans;
 }
 
 /* Breadcrumbs */
@@ -179,15 +180,15 @@ p {
 }
 
 .breadcrumb-link {
-  @apply text-sm text-gray-900 hover:text-blue-900 cursor-pointer;
+  @apply text-sm text-blue-900 hover:text-yellow-500 cursor-pointer;
 }
 
 .breadcrumb-separator {
-  @apply text-gray-900 mx-2;
+  @apply text-blue-900 mx-2;
 }
 
 .breadcrumb-current {
-  @apply text-sm text-blue-600 font-medium;
+  @apply text-sm text-yellow-600 font-medium;
 }
 
 /* Tables */
@@ -196,11 +197,11 @@ p {
 }
 
 .data-table th {
-  @apply px-4 py-3 border-b border-gray-200 text-xs font-medium text-gray-500 uppercase tracking-wider;
+  @apply px-4 py-3 border-b border-blue-200 text-xs font-medium text-blue-900 uppercase tracking-wider;
 }
 
 .data-table td {
-  @apply px-4 py-3 border-b border-gray-200 text-sm text-gray-600;
+  @apply px-4 py-3 border-b border-blue-100 text-sm text-blue-900;
 }
 
 .data-table tbody tr:last-child td {
@@ -209,7 +210,7 @@ p {
 
 /* Mock Data Banner Styling */
 .mock-data-banner {
-  @apply bg-blue-50 border border-blue-300 rounded-lg my-4 p-4 relative;
+  @apply bg-yellow-50 border border-yellow-300 rounded-lg my-4 p-4 relative;
 }
 
 .banner-content {
@@ -233,5 +234,5 @@ p {
 }
 
 .banner-content a {
-  @apply text-blue-600 underline hover:text-blue-800;
+  @apply text-blue-800 underline hover:text-yellow-600;
 }
