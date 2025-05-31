@@ -3,7 +3,7 @@ import { Link } from "react-router";
 function Sidebar({ genres, activeGenre, counts }) {
   return (
     <aside className="sidebar">
-      <div className="sidebar-title">Library</div>
+      <div className="sidebar-title">Health Library</div>
 
       <nav className="sidebar-nav">
         <Link
@@ -39,14 +39,14 @@ function Sidebar({ genres, activeGenre, counts }) {
       </nav>
 
       <div className="mt-auto pt-6 px-6">
-        <div className="text-xs text-gray-900">
+        <div className="text-xs text-yellow-300">
           Powered by
           <br />
           <a
             href="https://cloudflare.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-800 hover:underline"
+            className="text-blue-300 hover:underline"
           >
             Cloudflare
           </a>
